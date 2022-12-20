@@ -1,0 +1,41 @@
+###
+POST {{host}}:{{port}}/create
+Content-Type: application/json
+
+{
+  "name": "Volz",
+  "age": 26
+}
+
+###
+POST {{host}}:{{port}}/makeFriends
+Content-Type: application/json
+
+{
+  "source_id": 9,
+  "target_id": 8
+}
+
+###
+DELETE {{host}}:{{port}}/user
+Content-Type: application/json
+
+{
+  "user_id": 8
+}
+
+###
+GET {{host}}:{{port}}/getAll
+Accept: application/json
+
+###
+GET {{host}}:{{port}}/friends/2
+Accept: application/json
+
+###
+PUT {{host}}:{{port}}/user/9
+Content-Type: application/json
+
+{
+  "user_age" : 23
+}
